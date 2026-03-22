@@ -14,31 +14,31 @@ This project is created for:
 
 ## Important Note
 
-The Employees.sql file contains the database and schema creation script.
+The `Employees.sql` file contains the database and schema creation script.
 
-So must run Employees.sql first.
+So students must run `Employees.sql` first.
 
 ## Script Execution Order
 
 Please run the SQL files in the below order:
 
-1. Employees.sql
-2. Departments.sql
-3. Jobs.sql
-4. Regions.sql
-5. Countries.sql
-6. Locations.sql
-7. Job_History.sql
+1. `Employees.sql`
+2. `Departments.sql`
+3. `Jobs.sql`
+4. `Regions.sql`
+5. `Countries.sql`
+6. `Locations.sql`
+7. `Job_History.sql`
 
 ## Why this order
 
-- Employees.sql should run first because it creates the database and schema.
-- Departments.sql stores department details.
-- Jobs.sql stores job role details.
-- Regions.sql stores region details.
-- Countries.sql stores country details.
-- Locations.sql stores office location details.
-- Job_History.sql stores employee past job details.
+- `Employees.sql` should run first because it creates the database and schema.
+- `Departments.sql` stores department details.
+- `Jobs.sql` stores job role details.
+- `Regions.sql` stores region details.
+- `Countries.sql` stores country details.
+- `Locations.sql` stores office location details.
+- `Job_History.sql` stores employee past job details.
 
 ## Table Purpose
 
@@ -104,13 +104,13 @@ This is useful to understand employee past roles and department changes.
 ## How to Use
 
 1. Open Snowflake worksheet.
-2. Copy and run Employees.sql first.
+2. Copy and run `Employees.sql` first.
 3. Then run the remaining files in the given order.
-4. After loading, validate the data using SELECT * FROM table_name.
+4. After loading, validate the data using `SELECT * FROM table_name`.
 
 ## Example Validation Queries
 
-## sql
+```sql
 SELECT * FROM ODS.HR.EMPLOYEES;
 SELECT * FROM ODS.HR.DEPARTMENTS;
 SELECT * FROM ODS.HR.JOBS;
